@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriMind - AI Nutrition Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NutriMind</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>AI-Powered Nutrition Advisor</h2>
+        <p>Enter your details below to get a simple health and meal suggestion.</p>
+
+        <form id="nutritionForm">
+            <label>Age: <input type="number" id="age" required></label><br>
+            <label>Weight (kg): <input type="number" id="weight" required></label><br>
+            <label>Height (cm): <input type="number" id="height" required></label><br>
+            <label>Activity Level:
+                <select id="activity">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </label><br>
+            <button type="button" onclick="calculateNutrition()">Get Advice</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 NutriMind | AI Nutrition Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
